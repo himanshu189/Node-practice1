@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+</head>
+<body>
+  <% const name= 'himanshu' %>
+  <h1>
+    hello <%= name %>
+  </h1>
+  <h2>i m learning nodejs</h2>
+  
+   <%- include("./partials/nav.ejs") %>
+
+<h2>All Blogs</h2>
+ 
+      
+      <h3> <%= blogs.title %> </h3>
+      <p> <%= blogs.snippet %></p>
+      <p> <%= blogs.body %></p>
+
+    
+
+</body>
+</html>

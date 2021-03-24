@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+</head>
+<body>
+  <h1>
+    hello all
+  </h1>
+  <!-- <nav>
+  <a href="/"> home </a>
+  <a href="/about">about</a>
+  <a href="/blog/create">new blog</a>
+
+  </nav> -->
+  <%- include("./partials/nav.ejs") %>
+
+  <form action="/" method="POST" >
+
+    <label for="title"> blog title</label><br>
+    <input type="text" name="title" required><br>
+    <label for="snippet"> blog snippet</label><br>
+    <input type="text" name="snippet" required><br>
+
+    <label for="body"> blog body</label><br>
+<textarea required name="body"></textarea><br>
+<button>Submit</button>
+
+  </form>
+</body>
+</html>
